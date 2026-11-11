@@ -1,0 +1,27 @@
+{
+  "name": "nov2026",
+  "version": "1.0.0",
+  "description": "Aula de Playwright, Nov 2026 (playground: demoqa.com/books)",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep @smoke --project=chromium",
+    "test:api": "playwright test --grep @api --project=chromium",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:dev": "playwright test --project=chromium --headed --retries=0 --reporter=line",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:shard": "playwright test --shard=1/2",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://demoqa.com/books"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}
